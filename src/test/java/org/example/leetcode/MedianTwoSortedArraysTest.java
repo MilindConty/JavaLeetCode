@@ -14,6 +14,15 @@ class MedianTwoSortedArraysTest {
     }
 
     @Test
+    void findMedianSortedArrays4() {
+
+        int[] nums1 = {1, 2};
+        int[] nums2 = {3};
+        assertEquals(2.0, medianTwoSortedArrays.findMedianSortedArrays(nums1, nums2));
+
+    }
+
+    @Test
     void findMedianSortedArrays2() {
 
         int[] nums1 = {1, 3};
@@ -24,8 +33,8 @@ class MedianTwoSortedArraysTest {
 
     @Test
     void findMedianSortedArrays3(){
-        int[] nums1 = {};
+        int[] nums1 = {1};
         int[] nums2 = {3};
-        assertEquals(3.0, medianTwoSortedArrays.findMedianSortedArrays(nums1, nums2));
+        assertEquals(2.0, medianTwoSortedArrays.findMedianSortedArrays(nums1, nums2));
     }
 }
